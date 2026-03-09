@@ -4,3 +4,12 @@ __pycache__/
 *.img
 *.raw
 *.bin
+core/jpeg
+core/gif
+core/docx
+core/mp4
+core/pdf
+core/png
+core/xlsx
+core/zip
+core/coisas.txt
