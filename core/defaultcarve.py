@@ -8,6 +8,7 @@ from rich.table import Table
 from rich.progress import Progress
 from zipcarve import carve_zip
 from mp4carve import carve_mp4
+from txtcarve import carve_txt
 
 
 OVERLAP = 1024 #this is necessary because we need to search for the signature in the previous 1024 bytes
@@ -74,7 +75,13 @@ def default_carve(isopath, outpath, buffer_size):
                         if carve_zip(i, outpath, abs_start, f):
                             i = i+1
                         search_pointer = position_header + 4
-
+                    #elif format_name == "txt":
+                     #   txt_len = carve_txt(i, outpath, abs_start, f)
+                      #  if txt_len > 0:
+                       #     i = i+1
+                        #    search_pointer = position_header + txt_len
+                        #else:
+                        #    search_pointer = position_header + 4
                     else:
                         # Support for multiple footers
                         position_footer = -1

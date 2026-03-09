@@ -24,7 +24,7 @@ ASCII_ART = """
            [italic cyan]Digital Forensics File Carver[/italic cyan]
            [italic blue]By Nicolas Pauferro[/italic blue]
            [italic purple]Supported files: jpg, png, pdf, gif, zip, mp4 and docx[/italic purple]
-           [italic white]txt, mp3, rar cooming soon...[/italic white]
+           [italic white]txt and rar cooming soon...[/italic white]
 
 """
 
