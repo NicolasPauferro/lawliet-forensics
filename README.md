@@ -58,7 +58,20 @@
 
 Lawliet provides two distinct ways to operate, depending on your forensic workspace requirements.
 
-### 🌐 Web Interface (Recommended)
+
+
+### 💻 CLI Mode (Recommended)
+For automated tasks or terminal-based forensic analysis.
+
+```bash
+python3 core/lawliet.py "path/to/image" "path/to/output" -b "BUFFER SIZE IN MB"
+```
+*Options:*
+- `-b`: Buffer size in MB (defaults to 8MB). Increasing this can improve speed on systems with high RAM.
+
+---
+
+### 🌐 Web Interface 
 The modern web interface allows for easy image management, one-click recovery, and file browsing.
 
 1. **Start the server**:
@@ -71,17 +84,6 @@ The modern web interface allows for easy image management, one-click recovery, a
   <img src="example.png" alt="Web Interface Screenshot" width="800" style="margin: 20px 0; border: 1px solid #333;"/>
   <p><i>The intuitive dashboard for managing forensic tasks</i></p>
 </div>
-
-### 💻 CLI Mode
-For automated tasks or terminal-based forensic analysis.
-
-```bash
-python3 core/lawliet.py "path/to/image" "path/to/output" -b "BUFFER SIZE IN MB"
-```
-*Options:*
-- `-b`: Buffer size in MB (defaults to 8MB). Increasing this can improve speed on systems with high RAM.
-
----
 
 ## Supported File Types
 
